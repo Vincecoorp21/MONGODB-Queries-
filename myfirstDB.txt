@@ -1,0 +1,41 @@
+// 1.2.1 INSERTAR DATOS
+
+1. Insertar al menos 10 nuevos usuarios:
+- Username
+- Email
+- Age
+
+
+db.users.insertMany([
+{ username:"user1", email:"user1@gmail.com", age:23},
+... { username:"user2", email:"user2@gmail.com", age:24},
+... { username:"user3", email:"user3@gmail.com", age:25},
+... { username:"user4", email:"user4@gmail.com", age:26},
+... { username:"user5", email:"user5@gmail.com", age:27},
+... { username:"user6", email:"user6@gmail.com", age:28},
+... { username:"user7", email:"user7@gmail.com", age:29},
+... { username:"user8", email:"user8@gmail.com", age:30},
+... { username:"user9", email:"user9@gmail.com", age:31},
+... { username:"user10", email:"user10@gmail.com", age: 32};])
+
+2. Insertar al menos 15 publicaciones nuevas con almenos 2 comentarios por publicación:
+Title
+Body
+Username
+Comments
+Username
+Body
+
+myfirstdbs> db.posts.insertMany([ {title:"Pasta", body:"Me encanta la pasta", username:"juanax", comments:[{username:"mrvictor", body:"La pasta esta sobrevalorada"}]}, {title:"Pasta", body:"Me encanta la pasta", username:"juanax", comments:[{username:"mrvictor", body:"La pasta esta sobrevalorada"}]}, {title:"Pasta", body:"Me encanta la pasta", username:"juanax", comments:[{username:"mrvictor", body:"La pasta esta sobrevalorada"}]}, {title:"Pasta", body:"Me encanta la pasta", username:"juanax", comments:[{username:"mrvictor", body:"La pasta esta sobrevalorada"}]}, {title:"Pasta", body:"Me encanta la pasta", username:"juanax", comments:[{username:"mrvictor", body:"La pasta esta sobrevalorada"}]}])...
+
+
+1.2.2 ACTUALIZAR DATOS
+
+- Actualizar publicaciones:
+1. Actualiza todos los campos de una publicación.
+
+2. Cambiar el body de una publicación.
+
+3. Actualizar comentarios:
+ Cambiar el body de un comentario.
+
