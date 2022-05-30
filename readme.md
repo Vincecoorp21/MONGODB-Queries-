@@ -135,7 +135,7 @@ db.users.update({username: 'user10'},{ $inc:{age:5}});
 db.posts.find()
 ```
 
-10. ● Selecciona las publicaciones que coincidan con el username indicado.
+10. Selecciona las publicaciones que coincidan con el username indicado.
 
 ```
 db.posts.find({username:'user4'})
