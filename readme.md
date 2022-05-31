@@ -213,7 +213,7 @@ db.users.deleteMany({age;{$gt:30}})
 20. Seleccione el número total de publicaciones que tienen más de un comentario.
 
 ```
-db.post.find( { comments: {$size: 2} } )
+db.post.find( { comments: {$size: 2} } ).count();
 ```
 
 21. Seleccione la última publicación creada
